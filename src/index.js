@@ -43,5 +43,5 @@ selectButton.addEventListener('click', async () => {
         img.remove()
     }) 
     savedDogs.append(img)
-})
+})  
 
