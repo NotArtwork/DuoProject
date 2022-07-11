@@ -39,5 +39,9 @@ dogButton.addEventListener('click', async () => {
 selectButton.addEventListener('click', async () => {
     img = document.createElement('img')
     img.src = dogImage.src
+    img.addEventListener('click', () => {
+        img.remove()
+    }) 
     savedDogs.append(img)
 })
+
