@@ -1,0 +1,40 @@
+#title {
+    height: 30px;    
+}
+
+#page-name {
+    position: absolute;
+    top: 0%;
+    color: black;
+}
+body {
+    background-color: #CCCCCC;
+    font-family: sans-serif;
+    color:white;
+}
+
+#title-section {
+    border: width 3px;
+    border-color:black;
+    position:relative;
+    text-align: center;
+    height: 300px;
+    background-image: url('/Users/art/Projects/Personal-Project/imgs/Banner-another_dog_REQ.jpeg');
+}
+
+
+#middle-section {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+}
+
+#dog-image {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border: 2px black;
+}
+
+
