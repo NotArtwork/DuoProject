@@ -3,8 +3,13 @@
 
 *{box-sizing: border-box;}
 
+h3 {
+    color: white;
+}
+
+
 #title {
-    height: 30px;    
+    height: 150px;
 }
 
 #page-name {
@@ -43,12 +48,22 @@
     background-color: #211b4385;
 }
 
-/* Button */
+/* Button Under Image*/
+  #random-dog, #select-dog {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#random-dog, #select-dog:active {
+    transform: scale(0.98);
+}
+
 .button {
     text-align: center;
     flex-direction: column;
     align-items: center;
     padding: 6px 14px;
+    
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
     border-radius: 6px;
     border: none;
@@ -78,6 +93,18 @@ body {
     background-attachment: fixed;
 }
 
+#about-us-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 /* #title-section {
     border: width 3px;
     border-color:black;
@@ -104,22 +131,46 @@ body {
 }
 
 #saved-dogs {
-    padding-left: 80px;
-    padding-top: 10px
-    ;}
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#saved-dogs img{
+    border: white;
+    border-style: dotted;
+    border-radius: 1px;
+}
+
     
 /* Ending-Section */
 
-footer {
+#form-section {
+    display: table-cell;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 800px;
+}
+#all {
+    position: relative;
+    min-height: 100vh;
+}
+
+#footer {
     background-color: rgba(255, 255, 255, .2);
     text-align: center;
     width: 100%;
-    position: fixed;
+    height: 60px;
+    position:absolute;
+    bottom: 0;
 }
 
 #ending-section {   
     background-color: rgba(255, 255, 255, 0.1);
-    height: 300px;
+    min-height: 30vh;
+    margin-bottom: -100px;
+    flex-direction: row;
+    display: flex;
+    
 }
 
 #ending-section h2 {
@@ -131,12 +182,17 @@ footer {
 
 }
 
-#ending-section img {
-    border: #fff;
-    border-width: 10px;
-    width: 250px;
-    height: 250px;
+#dog-template {
+    height: 400px;
+    width: 400px;
+    align-self: auto;
 }
+
+#signup {
+    text-align: center;
+}
+
+/* Social Media Buttons */
 
 .wrapper {
     display: inline-flex;

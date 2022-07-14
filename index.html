@@ -10,33 +10,49 @@
    <script src="https://use.fontawesome.com/521ffd3a8d.js"></script>
 </head>
 <body>
+    <div id="all">
     <div class='header'>
         <ul>
             <li><a href="#">About</a></li>
             <li><a href="https://youtu.be/oHg5SJYRHA0">Dog Catalog</a></li>
-            <li><a href="#">Donate</a></li>
+            <li><a href="https://www.youtube.com/watch?v=_84gBlRZwO0">Donate</a></li>
             <li><a href="#ending-section">Saved Dogs</a></li>
             <li><a href="#">Contacts</a></li>
+
         </ul>
     </div>
     <div id ="title">
     </div>
-   
     <div id ='title-section'></div>
     
     <section id ='middle-section'>
         <div id="dog-container">
+            <h3>Dog Name:</h3><h3 id="dog-name">Name</h3>
             <img id="dog-image" img src="imgs/istockphoto-537516693-612x612.jpeg"></img>
         </div>
         <button id="random-dog" class="button">Find A Dog!</button>
         <button id="select-dog" class="button">Select This Dog!</button>
     </section>
-    <section id='ending-section'>
-        <h2>Your Doges:</h2>
+    <div id='ending-section'>
         <div id="saved-dogs">
+            <img id="dog-template" img src="https://25.media.tumblr.com/bb6d1362ff848a3d00db0cc2806614e7/tumblr_n1q06qXy431r4ueyro1_500.jpg">
         </div>
-    </section>
-    <footer>
+        <div id="form-section">
+            <form action="/signup" method="post" id="signup">
+                <h2 id="dog-name">Apply to adopt a friend!</h2>
+                <div class="field">
+                    <h3>Name:</h3>
+                        <input type="text" id="name" name="name" placeholder="Enter your Full Name" />
+                    <h3>Address:</h3>
+                       <input type="text" id="address" name="addres" placeholder="Enter your Address" />
+                    <h3>Occupation:</h3>
+                       <input type="text" id="occupation" name="occupation" placeholder="Enter your Occupation" />
+                <br>
+                       <button type="submit" class="button" id="adopt">Adopt Now</button>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
         <div class="wrapper">
             <div class="icon facebook">
                 <div class="tooltip">
@@ -57,6 +73,7 @@
                 <span><i class="fa fa-youtube"></i></span>
             </div>
         </div>
-    </footer>
+    </div>
+    </div>
 </body>
 </html>
